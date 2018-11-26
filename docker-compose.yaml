@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  frontend:
+    network_mode: bridge
+    image: frontend
+    build:
+      context: .
+    ports:
+      - 8080:8080
+    volumes:
+      - .:/frontend:rw
