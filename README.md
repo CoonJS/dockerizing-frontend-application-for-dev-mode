@@ -1,16 +1,19 @@
-# dockerizing-frontend-application-for-dev-mode
-It's an example config of dockerized frontend application.
+# Оборачиваем frontend приложение в Docker Container
 
-If you have docker & and docker-compose, just run in your bash:
+1. Скачиваем [docker](https://docs.docker.com/install/)
+2. Устанавливаем [docker-compose](https://docs.docker.com/compose/install/)
 
+Проверяем установку
+> docker -v 
+> docker-compose -v
+
+Запускаем `frontend` сервис:
 > docker-compose up
 
-You can see your active containers, if you execute command:
-
+Для того, чтобы посмотреть список активных контейнеров, выполняем команду:
 > docker ps
 
-Open http://0.0.0.0:8080 in you browser
+Открываем [localhost](http://0.0.0.0:8080) и видим приложение, запущенное через `docker-container`
 
-To stop your container, run:
-
+Для остановки `frontend` сервиса, выполняем команду:
 > docker-compose stop
